@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/*Сдыинуть весь сайт чуть чуть вправо*/
-
 /*-----------Heaader menu-------------*/
 .header_menu{
     background-color: #132B4D;
@@ -13,14 +10,18 @@
     
 }
 .header_menu__logo{
-    padding: 17px 84px 18px 0px;
+    padding: 17px 84px 18px 375px;
 }
 .header_menu_button{
-justify-content: center;
-padding-top: 37px ; /*испаравить без него не хочет спускаться текс!*/
+margin: 37px 70px 37px 0px; 
 }
 .heder_menu_link{
-    padding: 37px 20px 37px 20px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    padding-right: 20.54px;
     text-decoration: none;
     color: #E9EEF4;
 }
@@ -28,40 +29,50 @@ padding-top: 37px ; /*испаравить без него не хочет сп�
 .heder_menu_link:focus{
     text-decoration: underline;
 }
-.heder_menu_link_button{
-    /*Скруглить фон у кнопки*/
-    padding: 7px 17.5px 7px 17.5px;
-    background-color: #E215A7;
+.header_menu_button-ContactUs{
+margin:37px 374.5px 37px 17px ;
+}
+.header_menu_button-ContactUs_link{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #EE1D76;
+    border-radius: 4px;
+    padding:7px 17.5px 7px 17.5px ;
     text-decoration: none;
     color: #E9EEF4;
 }
-.heder_menu_link_button:hover,
-.heder_menu_link_button:focus{
-    background-color:#bd1b8f ;
+.header_menu_button-ContactUs_link:hover,
+.header_menu_button-ContactUs_link:focus{
+    background-color: #9a124d;
 }
-/*-----------Запарная Хуйня-------------*/
+/*-----------Сложный второй блок-------------*/
 /*-----------About US-------------*/
 .aboutUs{
     background-color: #132B4D;/*Испарвить фон!*/
     display: grid;
-    
     grid-template-rows:repeat(3,1fr) ;
 }
 .aboutUs_line_top{
-    padding: 100px 617px 5px 574px;
-
+    margin:100px 874px 5px 876px ;
 }
 .aboutUs_title_text{
-    /*Настроить шрифт, отступы*/
-     padding: 0px 617px 5px 574px;
+     margin: 0px 874px 0px 876px ;
+     font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
      color: #E9EEF4;
 } 
 .aboutUs_line_bottom{
-    padding: 0px 617px 5px 574px;
+    margin: 5px 874px 30px 876px;
 }
-.aboutUs_text{
+.aboutUs_text{/*Остановился тут*/
     /*Сделать что-то с размещением текста*/
-    padding:  36px 340px 0px 339px;
+    /* padding:  36px 340px 0px 339px; */
     text-align: center;
     color: #E9EEF4;
 }
