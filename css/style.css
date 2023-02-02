@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Сдыинуть весь сайт чуть чуть вправо*/
+
+/*-----------Heaader menu-------------*/
+.header_menu{
+    background-color: #132B4D;
+    display:flex ;
+    
+}
+.header_menu__logo{
+    padding: 17px 84px 18px 0px;
+}
+.header_menu_button{
+justify-content: center;
+padding-top: 37px ; /*испаравить без него не хочет спускаться текс!*/
+}
+.heder_menu_link{
+    padding: 37px 20px 37px 20px;
+    text-decoration: none;
+    color: #E9EEF4;
+}
+.heder_menu_link:hover,
+.heder_menu_link:focus{
+    text-decoration: underline;
+}
+.heder_menu_link_button{
+    /*Скруглить фон у кнопки*/
+    padding: 7px 17.5px 7px 17.5px;
+    background-color: #E215A7;
+    text-decoration: none;
+    color: #E9EEF4;
+}
+.heder_menu_link_button:hover,
+.heder_menu_link_button:focus{
+    background-color:#bd1b8f ;
+}
+/*-----------Запарная Хуйня-------------*/
+/*-----------About US-------------*/
+.aboutUs{
+    background-color: #132B4D;/*Испарвить фон!*/
+    display: grid;
+    
+    grid-template-rows:repeat(3,1fr) ;
+}
+.aboutUs_line_top{
+    padding: 100px 617px 5px 574px;
+
+}
+.aboutUs_title_text{
+    /*Настроить шрифт, отступы*/
+     padding: 0px 617px 5px 574px;
+     color: #E9EEF4;
+} 
+.aboutUs_line_bottom{
+    padding: 0px 617px 5px 574px;
+}
+.aboutUs_text{
+    /*Сделать что-то с размещением текста*/
+    padding:  36px 340px 0px 339px;
+    text-align: center;
+    color: #E9EEF4;
+}
+/*-----------Company Standards-------------*/
+.CompanyStandards_title_text{
+    color: #EE1D76;
+}
+.CompanyStandards_text{
+    color: #E9EEF4;
+}
+.Standarts{
+    display: grid;
+    grid-template-columns: 230px 300px ;
+    grid-template-rows: repeat(5,1fr);
+    grid-column-gap: 50px;
+}
+.standarts_item{
+    color: #E9EEF4;
+}
+.CompanyStandart_CheckMark{
+    padding-right: 10px;
+}
+
+
