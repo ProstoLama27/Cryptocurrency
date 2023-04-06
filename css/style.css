@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* -----------------меню------------- */
+/* настройка всего блока */
+.header__menu{
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    height: 100px;
+    background-color:  #132B4D;
+    padding: 0 10px 0 10px;
+}
+/* настройка логотипа  */
+/* настроить положение картинки! */
+.header__menuLogo{  
+    margin: 17px 55px 17px 0;
+    /* margin-right: 55px; */
+    width: 174px;
+    height: 65px;
+}
+/* настройки ссылок */
+.header__menuLink{
+    text-align: center;
+    margin-top: 36.5px;
+}
+.header__menuLink a{
+    padding-left: 20px;
+    color:  #E9EEF4;
+    text-decoration: none;
+}
+/* настройки кнопки */
+.header__menuBtn{
+    width: 120px;
+    height: 40px;
+    border-radius: 10%;
+    padding: 7px 17.5px 7px 17.5px;
+    margin-top: 30px;
+    margin-left: 70px;
+    background:linear-gradient(282.95deg, #E215A7 -11.93%, #EE1D78 134.56%); ;
+    color: #E9EEF4;
+}
+/* кнопка меню */
+.header__menu__burgerBtn{
+    display: none;
+}
+
+/* создал кнопку меню надо написать скрипты и выподающее меню и header menu будет готово */
+@media(max-width:1200px){
+}
+@media(max-width:992px){
+    /* меню */
+    .header__menu{
+        justify-content: space-around;
+    }
+    .header__menuLink a{
+        display: none;
+    }
+    .header__menu__burgerBtn{
+        display: block;
+       margin: 30px 20px 0 0;
+        width: 40px;
+        height: 40px;
+        background-color:  #163968;
+    }
+    .header__menu__bergerImg{
+        width: 40px;
+    }
+}
+@media(max-width:767px){
+
+}
