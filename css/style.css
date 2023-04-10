@@ -1,6 +1,16 @@
+/* общие настройки */
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    background-color: #132B4D;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
 }
 /* -----------------меню------------- */
 /* настройка всего блока */
@@ -9,7 +19,7 @@
     justify-content: center;
     max-width: 1920px;
     height: 100px;
-    background-color:  #132B4D;
+    /* background-color:  #132B4D; */
     padding: 0 10px 0 10px;
 }
 /* настройка логотипа  */
@@ -20,6 +30,10 @@
     width: 174px;
     height: 65px;
 }
+/* еастройки списка */
+.header__menuComponents{
+    float: left;
+}
 /* настройки ссылок */
 .header__menuLink{
     text-align: center;
@@ -28,7 +42,10 @@
 .header__menuLink a{
     padding-left: 20px;
     color:  #E9EEF4;
-    text-decoration: none;
+}
+.header__menuLink :hover,
+.header__menuLink :focus{
+    color:  #ccd2d9 ;
 }
 /* настройки кнопки */
 .header__menuBtn{
@@ -45,7 +62,56 @@
 .header__menu__burgerBtn{
     display: none;
 }
-
+/*------------------Подвал---------------------------- */
+.footer__filling{
+    display: grid;
+    /* настроить положение колонок, чтобы все влазило в рамки! */
+    grid-template-columns: repeat(5,235px);
+    justify-content: center;
+    text-align: center;
+    max-width: 1920px;
+    height: 365px;
+    /* background-color: aqua;потом поменять на нормальный! */
+}
+/* первый столбик */
+/* НАСТРОИТЬ РАСПОЛОЖЕНИЕ КОМПОНЕНТОВ */
+.footer__CriptenLogo{
+    width: 174px;
+    height: 65px;
+}
+.footer__CriptenText{
+    color:#CBD1D9;
+    width: 241px;
+    height: 52px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.footer__SocialMedia{
+    width: 190px;
+    height: 55px;
+}
+/* заголовки */
+.footer__header{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: #E9EEF4;
+    margin-bottom: 20px;
+}
+/* настройка компонентов списков */
+.footer__ListContent{
+    /* нужно сделать ссылками! */
+    color:#CBD1D9;
+    margin-bottom: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
 /* создал кнопку меню надо написать скрипты и выподающее меню и header menu будет готово */
 @media(max-width:1200px){
 }
