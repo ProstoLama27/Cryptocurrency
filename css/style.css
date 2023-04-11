@@ -1,3 +1,4 @@
+/* НЕ ЗАБЫТЬ ДОБАВИТЬ ШРИФТЫ!!! */
 /* общие настройки */
 *{
     margin: 0;
@@ -61,6 +62,75 @@ ul{
 .header__menu__burgerBtn{
     display: none;
 }
+/* --------------------About Us-------------------------------- */
+/* подумать - чтобы классы для заголовка сдлеать едиными для всех! */
+/* доделать оформление Левая колонка кривая! */
+.aboutUs{
+    max-width: 1544px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+.aboutUs__header{
+    color: #E9EEF4;
+    height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+.aboutUs__headerText{
+    color: #E8E8E8;
+    height: 52px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 70px;
+}
+.aboutUs__CompanyStandards__header{
+    /* надо разобраться с цветом заголовка */
+    text-align: left;
+    color: #E215A7; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+}
+.aboutUs__CompanyStandards__text{
+    color: #E8E8E8;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.aboutUs__CompanyStandards__List{
+    list-style-type:none;
+}
+/* настройки для текста в li */
+ /* font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px; */
+.aboutUs__CompanyStandards__List li{
+    text-align: left;
+    /* display:block; */
+    float:left;
+    width:34%;
+}
+.aboutUs__CompanyStandards__vidio{
+    width: 874.68px;
+    height: 472.44px;
+    left: 1046.34px;
+    top: 1163.56px;
+
+}
+.ddd{
+    display: flex;
+    margin-left: 250px;
+    justify-content: space-between;
+}
 /*------------------Подвал---------------------------- */
 .footer__filling{
     display: flex;
@@ -70,6 +140,8 @@ ul{
     max-width: 1050px;
     margin: 0 auto;
     padding: 0 10px 0 10px;
+    margin-top: 140px;
+    /* временный костыль для отображения footera  */
 }
 /* первый столбик */
  .footer__CriptenLogo{
