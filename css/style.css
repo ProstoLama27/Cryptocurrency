@@ -16,10 +16,9 @@ ul{
 /* настройка всего блока */
 .header__menu{
     display: flex;
-    justify-content: center;
-    max-width: 1920px;
-    height: 100px;
-    /* background-color:  #132B4D; */
+    justify-content: space-between;
+    max-width: 1050px;
+    margin: 0 auto;
     padding: 0 10px 0 10px;
 }
 /* настройка логотипа  */
@@ -64,26 +63,25 @@ ul{
 }
 /*------------------Подвал---------------------------- */
 .footer__filling{
-    display: grid;
-    /* настроить положение колонок, чтобы все влазило в рамки! */
-    grid-template-columns: repeat(5,235px);
-    justify-content: center;
-    text-align: center;
-    max-width: 1920px;
-    height: 365px;
-    /* background-color: aqua;потом поменять на нормальный! */
+    display: flex;
+    /* flex-wrap: wrap; подумать над меньшей диагональю */
+    /* можно все свернуть в небольшое выпадающее меню! */
+    justify-content: space-between;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
 }
 /* первый столбик */
-/* НАСТРОИТЬ РАСПОЛОЖЕНИЕ КОМПОНЕНТОВ */
-.footer__CriptenLogo{
+ .footer__CriptenLogo{
     width: 174px;
     height: 65px;
 }
 .footer__CriptenText{
+    text-align: left;
+    /* padding-left: 70px ;.. */
     color:#CBD1D9;
     width: 241px;
     height: 52px;
-    text-align: left;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -92,30 +90,34 @@ ul{
 .footer__SocialMedia{
     width: 190px;
     height: 55px;
+    /* padding-left: 10px;p.. */
 }
 /* заголовки */
-.footer__header{
+ .footer__header{
+    text-align: center;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 34px;
     color: #E9EEF4;
     margin-bottom: 20px;
-}
+} 
 /* настройка компонентов списков */
-.footer__ListContent{
+ .footer__ListContent{
     /* нужно сделать ссылками! */
+    text-align: center;
     color:#CBD1D9;
     margin-bottom: 6px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-}
+} 
 /* создал кнопку меню надо написать скрипты и выподающее меню и header menu будет готово */
 @media(max-width:1200px){
 }
 @media(max-width:992px){
+    /* Вопрос: нормально что главное меню так съезжает при уменьшении! */
     /* меню */
     .header__menu{
         justify-content: space-around;
