@@ -30,7 +30,7 @@ ul{
     width: 174px;
     height: 65px;
 }
-/* еастройки списка */
+/* настройки списка */
 .header__menuComponents{
     float: left;
 }
@@ -61,6 +61,43 @@ ul{
 /* кнопка меню */
 .header__menu__burgerBtn{
     display: none;
+}
+/* настройки для бургер меню */
+/* дать нормальное название классам! */
+.dropMenu__Invisible{
+    display: none;
+    /* justify-content: center;
+    width: 100%;
+    height: 100px; */
+    /* display: none; */
+}
+.dropMenu__wisible{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+.bergerMenu_Ul{
+    align-content: center;
+}
+.burgerMenu_li{
+    margin-bottom: 20px;
+}
+.burgerMenu_Componnents{
+    text-align: left;
+    float: left;
+    width:50%;
+    margin-bottom: 20px;
+}
+.burgerMenu_link{
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: large;
+    color: #E9EEF4
+}
+.burgerMenu_link:hover,
+.burgerMenu_link:focus{
+    color:  #ccd2d9 ;
 }
 /* --------------------About Us-------------------------------- */
 /* подумать - чтобы классы для заголовка сдлеать едиными для всех! */
@@ -204,6 +241,8 @@ line-height: 26px; */
         height: 40px;
         background-color:  #163968;
     }
+    .header__menu__burgerBtn:hover,
+    .header__menu__burgerBtn:focus{}
     .header__menu__bergerImg{
         width: 40px;
     }

@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
        <section class="header__menu">
-        <button class="header__menu__burgerBtn"><img src="/img/burger_Menu.svg" alt="" class="header__menu__bergerImg"></button>
+        <button onclick="dropMenu()" class="header__menu__burgerBtn" id="burger_btn" ><img src="/img/burger_Menu.svg" alt="" class="header__menu__bergerImg"></button>
         <img src="img/logo.png" alt="Логотип" class="header__menuLogo">
         <nav class="header__menuLink">
-            <ul>
+            <ul id="headerMenu">
                 <li class="header__menuComponents"><a href="">home</a></li>
                 <li class="header__menuComponents"> <a href="">about</a></li>
                 <li class="header__menuComponents"><a href="">service</a></li>
@@ -27,8 +28,21 @@
         </nav>
         <button class="header__menuBtn">contact us</button>
        </section>
+       <div id="dropMenu" class="dropMenu__Invisible">
+        <ul id="headerMenu">
+            <li class="burgerMenu_Componnents"><a class="burgerMenu_link"  href="">home</a></li>
+            <li class="burgerMenu_Componnents"> <a class="burgerMenu_link" href="">about</a></li>
+            <li class="burgerMenu_Componnents"><a class="burgerMenu_link" href="">service</a></li>
+            <li class="burgerMenu_Componnents"><a class="burgerMenu_link" href="">crypto calculator</a></li>
+            <li class="burgerMenu_Componnents"><a class="burgerMenu_link"  href="">token sale</a></li>
+            <li class="burgerMenu_Componnents"><a class="burgerMenu_link" href="">token sale</a></li>
+            <li class="burgerMenu_Componnents"><a class="burgerMenu_link"  href="">team</a></li>
+            <li class="burgerMenu_Componnents"><a class="burgerMenu_link"  href="">pages</a></li>
+            <li class="burgerMenu_Componnents"><a class="burgerMenu_link"  href="">blog</a></li>
+        </ul>
+       </div>
     </header>
-    <section class="aboutUs">
+    <!-- <section class="aboutUs">
         <div>
             <img src="img/wand.png" alt="палочка">
             <h2 class="aboutUs__header">About Us </h2>
@@ -36,6 +50,7 @@
             <p class="aboutUs__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
                 aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
         </div>
+        Класс для какой-то настройки
         <div class="ddd">
         <div class="aboutUs__CompanyStandards">
             <h3 class="aboutUs__CompanyStandards__header">Company Standards</h3>
@@ -100,6 +115,6 @@
              <div class="footer__Subscribe">
                 <p class="footer__header">Subscribe To Our Newslitter</p>
              </div>   
-    </footer>
+    </footer> -->
 </body>
 </html>
