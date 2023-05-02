@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <header>
-       <section class="header__menu">
-        <button onclick="dropMenu()" class="header__menu__burgerBtn" id="burger_btn" ><img src="/img/burger_Menu.svg" alt="" class="header__menu__bergerImg"></button>
-        <img src="img/logo.png" alt="Логотип" class="header__menuLogo">
-        <nav class="header__menuLink">
+        <!-- начинает сжиматься на 930px -->
+        <section class="blockStandard header_menu">
+            <img src="img/logo.png" alt="">
             <ul id="headerMenu">
                 <li class="header__menuComponents"><a href="">home</a></li>
                 <li class="header__menuComponents"> <a href="">about</a></li>
@@ -25,96 +26,223 @@
                 <li class="header__menuComponents"><a href="">pages</a></li>
                 <li class="header__menuComponents"><a href="">blog</a></li>
             </ul>
-        </nav>
-        <button class="header__menuBtn">contact us</button>
-       </section>
-       <div id="dropMenu" class="dropMenu__Invisible">
-        <ul id="headerMenu">
-            <li class="burgerMenu_Componnents"><a class="burgerMenu_link"  href="">home</a></li>
-            <li class="burgerMenu_Componnents"> <a class="burgerMenu_link" href="">about</a></li>
-            <li class="burgerMenu_Componnents"><a class="burgerMenu_link" href="">service</a></li>
-            <li class="burgerMenu_Componnents"><a class="burgerMenu_link" href="">crypto calculator</a></li>
-            <li class="burgerMenu_Componnents"><a class="burgerMenu_link"  href="">token sale</a></li>
-            <li class="burgerMenu_Componnents"><a class="burgerMenu_link" href="">token sale</a></li>
-            <li class="burgerMenu_Componnents"><a class="burgerMenu_link"  href="">team</a></li>
-            <li class="burgerMenu_Componnents"><a class="burgerMenu_link"  href="">pages</a></li>
-            <li class="burgerMenu_Componnents"><a class="burgerMenu_link"  href="">blog</a></li>
-        </ul>
-       </div>
+            <button class="header__menuBtn">contact us</button>
+        </section>
     </header>
-    <!-- <section class="aboutUs">
-        <div>
+    <!-- <section class="blockStandard">
+        <div class="aa">
+        </div>
+    </section> -->
+    <!-- About Us  -->
+    <!-- <section class="blockStandard">
+        <div class="unitHeader">
             <img src="img/wand.png" alt="палочка">
-            <h2 class="aboutUs__header">About Us </h2>
+            <h2 class="blockHeader__header">About Us </h2>
             <img src="img/wand.png" alt="палочка">
-            <p class="aboutUs__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
+            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
+                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+        </div> -->
+    <!-- <div class="Company_Standarts">
+            <h3>Company standards</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis velit augue iaculis cras consectetur.
+                Felis duis sit facilisis risus. Nullam condimentum placerat ac dignissim...</p>
+        </div> -->
+    </section>
+    <!-- Our service for you -->
+    <section class="blockStandard">
+        <div class="unitHeader">
+            <img src="img/wand.png" alt="палочка">
+            <h2 class="blockHeader__header">Our service for you </h2>
+            <img src="img/wand.png" alt="палочка">
+            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
                 aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
         </div>
-        Класс для какой-то настройки
-        <div class="ddd">
-        <div class="aboutUs__CompanyStandards">
-            <h3 class="aboutUs__CompanyStandards__header">Company Standards</h3>
-            <p class="aboutUs__CompanyStandards__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis<br> velit augue iaculis cras consectetur. Felis duis sit facilisis risus.<br> Nullam condimentum placerat ac dignissim...</p>
-            <ul class="aboutUs__CompanyStandards__List">
-                <li> <img src="img/checkMark.png" alt="галочка">High Market</li>
-                <li> <img src="img/checkMark.png" alt="галочка">Realtime Update</li>
-                <li> <img src="img/checkMark.png" alt="галочка">Available Worlwide</li>
-                <li> <img src="img/checkMark.png" alt="галочка">Variety of Currencies</li>
-                <li> <img src="img/checkMark.png" alt="галочка">Excepteur sint occaecat deleniti</li>
-                <li> <img src="img/checkMark.png" alt="галочка">Fast Mining</li>
-                <li> <img src="img/checkMark.png" alt="галочка">Easy Mining</li>
-                <li> <img src="img/checkMark.png" alt="галочка">TRC20 Support</li>
-                <li> <img src="img/checkMark.png" alt="галочка">Corporis suscipit laboriosam cupid</li>
-                <li> <img src="img/checkMark.png" alt="галочка">Ut enim ad minima veniam quis nostr</li>
+        <div class="Slider_Menu">
+            <div class="menu">
+                <img src="img/BItcoin_Logo.png" alt="" class="sliderMenu__Img">
+                <h3 class="sliderMenu__Header">Bitcoin Escrow Service</h3>
+                <p class="sliderMenu__Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa
+                    ullamcorper ultrices eu tortor...</p>
+                <img src="img/arrowOn.png" alt="" class="sliderMenu__Img">
+            </div>
+            <div class="menu">
+                <img src="img/SAS_Img.png" alt="" class="sliderMenu__Img">
+                <h3 class="sliderMenu__Header">Bitcoin Escrow Service</h3>
+                <p class="sliderMenu__Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa
+                    ullamcorper ultrices eu tortor...</p>
+                <img src="img/arrowOn.png" alt="" class="sliderMenu__Img">
+            </div>
+            <div class="menu">
+                <img src="img/BES_Logo.png" alt="" class="sliderMenu__Img">
+                <h3 class="sliderMenu__Header">Bitcoin Escrow Service</h3>
+                <p class="sliderMenu__Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa
+                    ullamcorper ultrices eu tortor...</p>
+                <img src="img/arrowOn.png" alt="" class="sliderMenu__Img">
+            </div>
+        </div>
+    </section>
+    <!-- CRYPTO MINING CALCULATOR -->
+    <!-- <section class="blockStandard">
+        <div class="unitHeader">
+            <img src="img/wand.png" alt="палочка">
+            <h2 class="blockHeader__header">CRYPTO MINING CALCULATOR </h2>
+            <img src="img/wand.png" alt="палочка">
+            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
+                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+        </div>
+    </section> -->
+    <!-- ABOUT OUR PRODUCTS -->
+    <section class="blockStandard">
+        <div class="unitHeader">
+            <img src="img/wand.png" alt="палочка">
+            <h2 class="blockHeader__header">ABOUT OUR PRODUCTS </h2>
+            <img src="img/wand.png" alt="палочка">
+            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
+                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+        </div>
+        <div class="Slider_Menu">
+            <div class="menu">
+                <img src="img/DefiWallet_Img.png" alt="" class="sliderMenu__Img">
+                <h3 class="sliderMenu__Header">DeFi Wallet</h3>
+                <p class="sliderMenu__Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa
+                    ullamcorper ultrices eu tortor...</p>
+                <button class="LearnMore__btn">Learn More <img class="LearMore__btn__img" src="img/Arrow_Img.png"
+                        alt=""></button>
+            </div>
+            <div class="menu">
+                <img src="img/MIcroEther_Img.png" alt="" class="sliderMenu__Img">
+                <h3 class="sliderMenu__Header">Micro Ether</h3>
+                <p class="sliderMenu__Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa
+                    ullamcorper ultrices eu tortor...</p>
+                <button class="LearnMore__btn">Learn More <img class="LearMore__btn__img" src="img/Arrow_Img.png"
+                        alt=""></button>
+            </div>
+            <div class="menu">
+                <img src="img/NinjaTrader_Img.png" alt="" class="sliderMenu__Img">
+                <h3 class="sliderMenu__Header">NinjaTrader</h3>
+                <p class="sliderMenu__Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa
+                    ullamcorper ultrices eu tortor...</p>
+                <button class="LearnMore__btn">Learn More <img class="LearMore__btn__img" src="img/Arrow_Img.png"
+                        alt=""></button>
+            </div>
+        </div>
+    </section>
+    <!-- token seal -->
+    <!-- <section class="blockStandard">
+        <div class="unitHeader">
+            <img src="img/wand.png" alt="палочка">
+            <h2 class="blockHeader__header">token seal </h2>
+            <img src="img/wand.png" alt="палочка">
+            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
+                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+        </div>
+    </section> -->
+    <!--General Questions  -->
+    <!-- <section class="blockStandard">
+        <div class="unitHeader">
+            <img src="img/wand.png" alt="палочка">
+            <h2 class="blockHeader__header">General Questions </h2>
+            <img src="img/wand.png" alt="палочка">
+            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
+                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+        </div>
+    </section> -->
+    <!--Cripto Road Map  -->
+    <!-- <section class="blockStandard">
+        <div class="unitHeader">
+            <img src="img/wand.png" alt="палочка">
+            <h2 class="blockHeader__header">Cripto Road Map </h2>
+            <img src="img/wand.png" alt="палочка">
+            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
+                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+        </div>
+    </section> -->
+    <!--  POTENTIAL GROWTH-->
+    <!-- <section class="blockStandard">
+        <div class="unitHeader">
+            <img src="img/wand.png" alt="палочка">
+            <h2 class="blockHeader__header">POTENTIAL GROWTH </h2>
+            <img src="img/wand.png" alt="палочка">
+            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
+                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+        </div>
+    </section> -->
+    <!-- Member of our expert team  -->
+    <!-- <section class="blockStandard">
+        <div class="unitHeader">
+            <img src="img/wand.png" alt="палочка">
+            <h2 class="blockHeader__header">Member of our expert team </h2>
+            <img src="img/wand.png" alt="палочка">
+            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
+                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+        </div>
+    </section> -->
+    <!-- Latest News & Blog -->
+    <!-- <section class="blockStandard">
+        <div class="unitHeader">
+            <img src="img/wand.png" alt="палочка">
+            <h2 class="blockHeader__header">Latest News & Blog </h2>
+            <img src="img/wand.png" alt="палочка">
+            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
+                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+        </div>
+    </section> -->
+    </section>
+
+
+<footer class="footer__filling">
+    <div class="blockStandard mainBlock__footer">
+        <div>
+            <img src="img/logo_yellow.png" alt="">
+            <p class="footer__text">Sed diam nonumy eirmod tempor
+                Invidunt ut labore et dolore.</p>
+                <img src="img/facebook__img.png" alt="" class="footer_img">
+                <img src="img/twtter_Img.png" alt="" class="footer_img">
+                <img src="img/instagram_Img.png" alt="" class="footer_img">
+                <img src="img/pinterest_Img.png" alt="" class="footer_img">
+        </div>
+        <div>
+            <h3 class="footer__header">Qucik Link</h3>
+            <ul>
+                <li> <a href="" class="footer__text"> page</a></li>
+                <li> <a href="" class="footer__text"> about us</a></li>
+                <li> <a href="" class="footer__text"> blog</a></li>
+                <li> <a href="" class="footer__text"> team</a></li>
+                <li> <a href="" class="footer__text"> page</a></li>
+                <li> <a href="" class="footer__text"> single</a></li>
             </ul>
         </div>
-        <div class="aboutUs__CompanyStandards__vidio">
-            <img src="img/vidio.png" alt="видио">
+        <div>
+            <h3 class="footer__header">Ucik Link</h3>
+            <ul>
+                <li> <a href="" class="footer__text"> home</a></li>
+                <li> <a href="" class="footer__text"> pricing</a></li>
+                <li> <a href="" class="footer__text"> token</a></li>
+                <li> <a href="" class="footer__text"> sale</a></li>
+                <li> <a href="" class="footer__text"> testim</a></li>
+                <li> <a href="" class="footer__text"> FAQ</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="footer__header">Categories</h3>
+            <ul>
+                <li> <a href="" class="footer__text"> github</a></li>
+                <li> <a href="" class="footer__text"> lunch time</a></li>
+                <li> <a href="" class="footer__text"> redeem code</a></li>
+                <li> <a href="" class="footer__text"> product catalog</a></li>
+                <li> <a href="" class="footer__text"> design</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="footer__header">subscribe to our newsletter</h3>
         </div>
     </div>
-    </section>
-    <footer class="footer__filling">
-        <div class="footer__cripten">
-            <img src="img/logo_yellow.png" alt="Логотип" class="footer__CriptenLogo">
-            <p class="footer__CriptenText">Sed diam nonumy eirmod tempor
-                Invidunt ut labore et dolore.</p>
-                <img src="img/socialMedia.png" alt="социальные сети" class="footer__SocialMedia">
-             </div>
-             <div class="footer__QuckLink"> 
-                <p class="footer__header">Quck Link</p> 
-                <ul>
-                    <li class="footer__ListContent">page</li>
-                    <li class="footer__ListContent">about us</li>
-                    <li class="footer__ListContent">blog</li>
-                    <li class="footer__ListContent">term</li>
-                    <li class="footer__ListContent">pages</li>
-                    <li class="footer__ListContent">single</li>
-                </ul>
-            </div>  
-            <div class="footer__UcikLink"> 
-                <p class="footer__header">Ucik Link</p> 
-                <ul>
-                    <li class="footer__ListContent">home</li>
-                    <li class="footer__ListContent">pricin</li>
-                    <li class="footer__ListContent">token</li>
-                    <li class="footer__ListContent">sale</li>
-                    <li class="footer__ListContent">testim</li>
-                    <li class="footer__ListContent">FAQ</li>
-                </ul>
-             </div>
-             <div class="footer__Categories"> 
-                <p class="footer__header">Categories</p>
-                <ul>
-                    <li class="footer__ListContent">github</li>
-                    <li class="footer__ListContent">lunch time</li>
-                    <li class="footer__ListContent">redeem code</li>
-                    <li class="footer__ListContent">product catalog</li>
-                    <li class="footer__ListContent">design</li>
-                </ul>
-             </div>
-             <div class="footer__Subscribe">
-                <p class="footer__header">Subscribe To Our Newslitter</p>
-             </div>   
-    </footer> -->
+    <div class=" blockStandard footer__description">
+        <p class="footer__description__text" >Help & FAQ</p>
+        <p class="footer__description__text" >Copyright © 2021, Criptrn All Rights Reserved</p>
+        <p class="footer__description__text" >Terms & Condition</p>
+    </div>
+</footer>
 </body>
+
 </html>

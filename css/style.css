@@ -5,7 +5,7 @@
     padding: 0;
 }
 body{
-    background-color: #132B4D;
+     background-color: #132B4D; 
 }
 a{
     text-decoration: none;
@@ -13,102 +13,21 @@ a{
 ul{
     list-style: none;
 }
-/* -----------------меню------------- */
-/* настройка всего блока */
-.header__menu{
+/* настройка заголовков с палочками */
+.unitHeader{
     display: flex;
-    justify-content: space-between;
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 0 10px 0 10px;
-}
-/* настройка логотипа  */
-/* настроить положение картинки! */
-.header__menuLogo{  
-    margin: 17px 55px 17px 0;
-    /* margin-right: 55px; */
-    width: 174px;
-    height: 65px;
-}
-/* настройки списка */
-.header__menuComponents{
-    float: left;
-}
-/* настройки ссылок */
-.header__menuLink{
-    text-align: center;
-    margin-top: 36.5px;
-}
-.header__menuLink a{
-    padding-left: 20px;
-    color:  #E9EEF4;
-}
-.header__menuLink :hover,
-.header__menuLink :focus{
-    color:  #ccd2d9 ;
-}
-/* настройки кнопки */
-.header__menuBtn{
-    width: 120px;
-    height: 40px;
-    border-radius: 10%;
-    padding: 7px 17.5px 7px 17.5px;
-    margin-top: 30px;
-    margin-left: 70px;
-    background:linear-gradient(282.95deg, #E215A7 -11.93%, #EE1D78 134.56%); ;
-    color: #E9EEF4;
-}
-/* кнопка меню */
-.header__menu__burgerBtn{
-    display: none;
-}
-/* настройки для бургер меню */
-/* дать нормальное название классам! */
-.dropMenu__Invisible{
-    display: none;
-    /* justify-content: center;
-    width: 100%;
-    height: 100px; */
-    /* display: none; */
-}
-.dropMenu__wisible{
-    display: flex;
+    margin-top: 100px;
     justify-content: center;
-    width: 100%;
-    height: 200px;
+    flex-direction: column;
+    align-items: center;
 }
-.bergerMenu_Ul{
-    align-content: center;
-}
-.burgerMenu_li{
-    margin-bottom: 20px;
-}
-.burgerMenu_Componnents{
-    text-align: left;
-    float: left;
-    width:50%;
-    margin-bottom: 20px;
-}
-.burgerMenu_link{
-    text-decoration: none;
-    margin-left: 40px;
-    font-size: large;
-    color: #E9EEF4
-}
-.burgerMenu_link:hover,
-.burgerMenu_link:focus{
-    color:  #ccd2d9 ;
-}
-/* --------------------About Us-------------------------------- */
-/* подумать - чтобы классы для заголовка сдлеать едиными для всех! */
-/* доделать оформление Левая колонка кривая! */
-.aboutUs{
+.blockHeader {
     max-width: 1544px;
     margin: 0 auto;
     padding: 0 10px 0 10px;
     text-align: center;
 }
-.aboutUs__header{
+.blockHeader__header{
     color: #E9EEF4;
     height: 50px;
     font-style: normal;
@@ -116,7 +35,7 @@ ul{
     font-size: 40px;
     line-height: 50px;
 }
-.aboutUs__headerText{
+.blockHeader__headerText{
     color: #E8E8E8;
     height: 52px;
     font-style: normal;
@@ -125,109 +44,147 @@ ul{
     line-height: 26px;
     margin-bottom: 70px;
 }
-.aboutUs__CompanyStandards__header{
-    /* надо разобраться с цветом заголовка */
-    text-align: left;
-    color: #E215A7; 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 46px;
+.blockStandard{
+    max-width:1170px;
+   /* border: 2px solid red; */
+    margin: 0 auto;;
 }
-.aboutUs__CompanyStandards__text{
-    color: #E8E8E8;
-    text-align: left;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-}
-.aboutUs__CompanyStandards__List{
-    list-style-type:none;
-}
-/* настройки для текста в li */
- /* font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px; */
-.aboutUs__CompanyStandards__List li{
-    text-align: left;
-    /* display:block; */
-    float:left;
-    width:34%;
-}
-.aboutUs__CompanyStandards__vidio{
-    width: 874.68px;
-    height: 472.44px;
-    left: 1046.34px;
-    top: 1163.56px;
-
-}
-.ddd{
+/* -----------------меню------------- */
+.header_menu{
     display: flex;
-    margin-left: 250px;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
-/*------------------Подвал---------------------------- */
-.footer__filling{
+/* настройки списка */
+.header__menuComponents{
+    float: left;
+}
+.header__menuComponents a {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #E9EEF4;
+}
+.header__menuComponents a:hover,
+.header__menuComponents a:focus{
+    color:  #ccd2d9 ;
+}
+/* настройки кнопки */
+.header__menuBtn{
+   width: 120px;
+   height: 40px;
+   color: #E9EEF4;
+   background-color: #E215A7;
+   border-radius: 4px;
+}
+/* --------------------------Next Generation Security--------------------------------------- */
+/* .aa{
+    border: 2px solid red;
+    max-width:971px ;
+    height: 746px;
+    background: url(../img/Backdrop_1_Block.png);
+    background-repeat: no-repeat;
+} */
+/* --------------------------About Us--------------------------------------- */
+.Company_Standarts{
+    border: 2px solid red;
+    max-width: 585px;
+    /* height: 100px; */
+}
+/* -------------------------- Our service for you - ABOUT OUR PRODUCTS-------------------------------------- */
+.Slider_Menu{
+    display: grid;
+    /* align-content: center; */
+    grid-template-columns: repeat(3, 390px);
+    
+}
+.menu{
     display: flex;
-    /* flex-wrap: wrap; подумать над меньшей диагональю */
-    /* можно все свернуть в небольшое выпадающее меню! */
-    justify-content: space-between;
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 0 10px 0 10px;
-    margin-top: 140px;
-    /* временный костыль для отображения footera  */
+    justify-content: center;
+    flex-direction: column;
 }
-/* первый столбик */
- .footer__CriptenLogo{
-    width: 174px;
-    height: 65px;
+.sliderMenu__Img{
+    align-self: center;
+    margin-bottom: 15px;
 }
-.footer__CriptenText{
-    text-align: left;
-    /* padding-left: 70px ;.. */
-    color:#CBD1D9;
-    width: 241px;
-    height: 52px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-}
-.footer__SocialMedia{
-    width: 190px;
-    height: 55px;
-    /* padding-left: 10px;p.. */
-}
-/* заголовки */
- .footer__header{
+.sliderMenu__Header{
+    margin-bottom: 15px;
     text-align: center;
+    font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 26px;
+color: #E9EEF4;
+}
+.sliderMenu__Text{
+    font-style: normal;
+    max-width: 304.48px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #EDEDED;
+}
+.LearnMore__btn{
+    align-self: center;
+    width: 135px;
+    height: 40px;
+    margin-top: 26px;
+    padding: 7px 0px 7px 16px;
+    background-color: #132B4D;
+    border: 1px solid #E215A7 ;
+    border-radius: 4px;
+    color:  #E9EEF4;
+}
+.LearMore__btn__img{
+    padding-left: 10px;
+    padding-right: 16px;
+}
+/* --------------------------footer--------------------------------------- */
+.mainBlock__footer{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 234px);
+}
+.footer__description{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__description__text {
+    margin-top: 90px;
+    margin-bottom: 70px;
+    color: #F2F2F2;
+}
+.footer__header {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 34px;
+    text-transform: capitalize;
     color: #E9EEF4;
-    margin-bottom: 20px;
-} 
-/* настройка компонентов списков */
- .footer__ListContent{
-    /* нужно сделать ссылками! */
+
+}
+.footer__text {
     text-align: center;
-    color:#CBD1D9;
-    margin-bottom: 6px;
     font-style: normal;
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-} 
-/* создал кнопку меню надо написать скрипты и выподающее меню и header menu будет готово */
-@media(max-width:1200px){
+    color: #CBD1D9;
 }
-@media(max-width:992px){
-    /* Вопрос: нормально что главное меню так съезжает при уменьшении! */
-    /* меню */
+/* .Slider_Menu:hover,
+.Slider_Menu:focus{
+    background-color: #E215A7;
+} */
+
+/* создал кнопку меню надо написать скрипты и выподающее меню и header menu будет готово */
+/* @media(max-width:1200px){
+} */
+/* @media(max-width:992px){
+    Вопрос: нормально что главное меню так съезжает при уменьшении!
+    меню
     .header__menu{
         justify-content: space-around;
     }
@@ -249,4 +206,4 @@ line-height: 26px; */
 }
 @media(max-width:767px){
 
-}
+} */
