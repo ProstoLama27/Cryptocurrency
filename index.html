@@ -5,16 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cryptocurrency</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="script.js"></script>
+    <script defer src="BurgerMenu.js"></script>
 </head>
 
 <body>
     <header>
         <!-- начинает сжиматься на 930px -->
         <section class="blockStandard header_menu">
-            <img src="img/logo.png" alt="">
+            <button class="headerMenu__Burger" type="button">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+            <nav class="main-nav ">
+                <ul class="main-nav_list">
+                    <li class="main-nav-item header__menuComponents"><a href="">home</a></li>
+                    <li class="main-nav-item header__menuComponents"> <a href="">about</a></li>
+                    <li class="main-nav-item header__menuComponents"><a href="">service</a></li>
+                    <li class="main-nav-item header__menuComponents"><a href="">crypto calculator</a></li>
+                    <li class="main-nav-item header__menuComponents"><a href="">token sale</a></li>
+                    <li class="main-nav-item header__menuComponents"><a href="">token sale</a></li>
+                    <li class="main-nav-item header__menuComponents"><a href="">team</a></li>
+                    <li class="main-nav-item header__menuComponents"><a href="">pages</a></li>
+                    <li class="main-nav-item header__menuComponents"><a href="">blog</a></li>
+                </ul>
+            </nav>
+
+            <img src="img/logo.png" alt="логотип" class="header_menu__Img">
             <ul id="headerMenu">
                 <li class="header__menuComponents"><a href="">home</a></li>
                 <li class="header__menuComponents"> <a href="">about</a></li>
@@ -30,8 +50,7 @@
         </section>
     </header>
    <!-- About Us -->
-   <!-- blockStandard -->
-    <section class="">
+    <!-- <section>
         <div class="unitHeader">
             <img src="img/wand.png" alt="палочка">
             <h2 class="blockHeader__header">Avout Us </h2>
@@ -87,9 +106,9 @@
                 <button class="ATPoTW__Btn">Read More</button>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Our service for you -->
-    <section class="blockStandard">
+    <!-- <section class="blockStandard">
         <div class="unitHeader">
             <img src="img/wand.png" alt="палочка">
             <h2 class="blockHeader__header">Our service for you </h2>
@@ -121,18 +140,9 @@
             </div>
         </div>
     </section>
-    <!-- CRYPTO MINING CALCULATOR -->
-    <!-- <section class="blockStandard">
-        <div class="unitHeader">
-            <img src="img/wand.png" alt="палочка">
-            <h2 class="blockHeader__header">CRYPTO MINING CALCULATOR </h2>
-            <img src="img/wand.png" alt="палочка">
-            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
-                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
-        </div>
-    </section> -->
+    -->
     <!-- ABOUT OUR PRODUCTS -->
-    <section class="blockStandard">
+    <!-- <section class="blockStandard">
         <div class="unitHeader">
             <img src="img/wand.png" alt="палочка">
             <h2 class="blockHeader__header">ABOUT OUR PRODUCTS </h2>
@@ -166,37 +176,8 @@
                         alt=""></button>
             </div>
         </div>
-    </section>
-    <!-- token seal -->
-    <!-- <section class="blockStandard">
-        <div class="unitHeader">
-            <img src="img/wand.png" alt="палочка">
-            <h2 class="blockHeader__header">token seal </h2>
-            <img src="img/wand.png" alt="палочка">
-            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
-                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
-        </div>
     </section> -->
-    <!--General Questions  -->
-    <!-- <section class="blockStandard">
-        <div class="unitHeader">
-            <img src="img/wand.png" alt="палочка">
-            <h2 class="blockHeader__header">General Questions </h2>
-            <img src="img/wand.png" alt="палочка">
-            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
-                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
-        </div>
-    </section> -->
-    <!--Cripto Road Map  -->
-    <!-- <section class="blockStandard">
-        <div class="unitHeader">
-            <img src="img/wand.png" alt="палочка">
-            <h2 class="blockHeader__header">Cripto Road Map </h2>
-            <img src="img/wand.png" alt="палочка">
-            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
-                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
-        </div>
-    </section> -->
+   
     <!--  POTENTIAL GROWTH-->
     <!-- <section class="blockStandard">
         <div class="unitHeader">
@@ -206,6 +187,7 @@
             <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
                 aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
         </div>
+        <img src="img/Chart.png" alt="Диаграмма" class="Chart">
     </section> -->
     <!-- Member of our expert team  -->
     <!-- <section class="blockStandard">
@@ -216,20 +198,27 @@
             <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
                 aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
         </div>
-    </section> -->
-    <!-- Latest News & Blog -->
-    <!-- <section class="blockStandard">
-        <div class="unitHeader">
-            <img src="img/wand.png" alt="палочка">
-            <h2 class="blockHeader__header">Latest News & Blog </h2>
-            <img src="img/wand.png" alt="палочка">
-            <p class="blockHeader__headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum<br>
-                aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+        <div class="MoOET">
+            <div class="MoOET__Card">1</div>
+            <div class="MoOET__Card">
+                <p class="MoOET__Card__Title">Crystal 	Ealy</p>
+                <img src="img/CrystalEasy__Man.png" alt="" class="MoOET__Card__Img">
+                <button class="MoOET__Card__Btn">more info</button>
+            </div>
+            <div class="MoOET__Card">
+                <p class="MoOET__Card__Title">Zachary 	Cadiente</p>
+                <img src="img/ZacharyCadiente__Man.png" alt="" class="MoOET__Card__Img">
+                <button class="MoOET__Card__Btn">more info</button>
+            </div>
+            <div class="MoOET__Card">
+                <p class="MoOET__Card__Title">Kelvin 	Powell</p>
+                <img src="img/KelvinFlowell__Man.png" alt="" class="MoOET__Card__Img">
+                <button class="MoOET__Card__Btn">more info</button>
+            </div>
         </div>
-    </section> -->
     </section>
-
-
+   
+    </section>
 <footer class="footer__filling">
     <div class="blockStandard mainBlock__footer">
         <div>
@@ -282,7 +271,7 @@
         <p class="footer__description__text" >Copyright © 2021, Criptrn All Rights Reserved</p>
         <p class="footer__description__text" >Terms & Condition</p>
     </div>
-</footer>
+</footer> -->
 </body>
 
 </html>

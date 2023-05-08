@@ -50,6 +50,9 @@ ul{
     margin: 0 auto;;
 }
 /* -----------------меню------------- */
+.headerMenu__Burger{
+    visibility: hidden;
+}
 .header_menu{
     display: flex;
     flex-direction: row;
@@ -144,7 +147,6 @@ ul{
 .ATPoTW__Main {
     margin-left: 52px;
 }
-
 .ATPoTW__Title {
     margin-bottom: 21px;
     font-style: normal;
@@ -153,7 +155,6 @@ ul{
     line-height: 46px;
     color: #EE1D76;
 }
-
 .ATPoTW__Text {
     margin-bottom: 47px;
     color: #E8E8E8;
@@ -176,8 +177,7 @@ ul{
 .Slider_Menu{
     display: grid;
     /* align-content: center; */
-    grid-template-columns: repeat(3, 390px);
-    
+    grid-template-columns: repeat(3, 390px); 
 }
 .menu{
     display: flex;
@@ -222,6 +222,45 @@ color: #E9EEF4;
     padding-left: 10px;
     padding-right: 16px;
 }
+/* --------------------------Member of our expert team-------------------------------------- */
+.MoOET{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 30px;
+}
+.MoOET__Card{
+    position: relative;
+    height: 291px;
+    background-color: #2A3A56;
+}
+.MoOET__Card__Title {
+    margin-top: 25px;
+    color: #FEB109;
+    width: 173px;
+    height: 26px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+.MoOET__Card__Img{
+    position: absolute;
+    margin-left: 60px;
+    z-index: 1;
+}
+.MoOET__Card__Btn {
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    margin: 180px 97px 32px 101px;
+    border: 1px solid #FEB109;
+    border-radius: 4px 80px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E9EEF4;
+}
 /* --------------------------footer--------------------------------------- */
 .mainBlock__footer{
     margin-top: 40px;
@@ -255,36 +294,108 @@ color: #E9EEF4;
     line-height: 26px;
     color: #CBD1D9;
 }
-/* .Slider_Menu:hover,
-.Slider_Menu:focus{
-    background-color: #E215A7;
+/* ---------------------------- Burger menu---------------------------------------------- */
+.main-nav{
+   display: none;
+}
+/* .headerMenu__Burger{
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 110;
+}
+.burger__line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: black;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+.burger__line:nth-child(1){
+    top: 0;
+}
+.burger__line:nth-child(2){
+    top: 20px;
+}
+.burger__line:nth-child(3){
+    top: 20px;
+}
+.burger__line:nth-child(4){
+    top: 40px;
 } */
-
-/* создал кнопку меню надо написать скрипты и выподающее меню и header menu будет готово */
-/* @media(max-width:1200px){
-} */
-/* @media(max-width:992px){
-    Вопрос: нормально что главное меню так съезжает при уменьшении!
-    меню
-    .header__menu{
-        justify-content: space-around;
-    }
-    .header__menuLink a{
+@media (max-width:929px) {
+    #headerMenu{
         display: none;
     }
-    .header__menu__burgerBtn{
-        display: block;
-       margin: 30px 20px 0 0;
-        width: 40px;
-        height: 40px;
-        background-color:  #163968;
+    .headerMenu__Burger{
+        visibility: visible;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 110;
     }
-    .header__menu__burgerBtn:hover,
-    .header__menu__burgerBtn:focus{}
-    .header__menu__bergerImg{
-        width: 40px;
+    .burger__line{
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        background-color: #E215A7;
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+    .burger__line:nth-child(1){
+        top: 0;
+    }
+    .burger__line:nth-child(2){
+        top: 20px;
+    }
+    .burger__line:nth-child(3){
+        top: 20px;
+    }
+    .burger__line:nth-child(4){
+        top: 40px;
+    }
+    .main-nav{
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 1;
+        z-index: 90;
+        padding-top: 100px;
+        background-color: #17345c;
+        color: #E8E8E8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu{
+        visibility: visible;
+    }
+    .main-nav_list{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        text-align: center;
     }
 }
-@media(max-width:767px){
-
-} */
