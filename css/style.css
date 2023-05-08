@@ -86,10 +86,91 @@ ul{
     background-repeat: no-repeat;
 } */
 /* --------------------------About Us--------------------------------------- */
-.Company_Standarts{
-    border: 2px solid red;
-    max-width: 585px;
-    /* height: 100px; */
+.CompanuStandarts {
+    display: flex;
+    justify-content: right;
+}
+
+.CompanuStandarts__Content {
+    width: 670px;
+}
+
+.CompanuStandarts__Content__Title {
+    margin-bottom: 31px;
+    width: 389px;
+    height: 46px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #E215A7;
+}
+
+.CompanuStandarts__Content__Text {
+    width: 498.07px;
+    height: 78px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E8E8E8;
+}
+
+.CompanuStandarts__Ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.CompanuStandarts__Ul__Left {
+    margin-right: 50px;
+}
+
+.CompanuStandarts__Li {
+    margin-bottom: 21px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E8E8E8;
+}
+.CompanuStandarts__Li__Img{
+    margin-right: 10px;
+}
+.ATPoTW{
+    display: flex;
+    align-items: center;
+}
+.ATPoTW__Main {
+    margin-left: 52px;
+}
+
+.ATPoTW__Title {
+    margin-bottom: 21px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #EE1D76;
+}
+
+.ATPoTW__Text {
+    margin-bottom: 47px;
+    color: #E8E8E8;
+    width: 438px;
+    height: 52px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.ATPoTW__Btn {
+    width: 120px;
+    height: 40px;
+    padding: 7px 20px;
+    background-color: #E215A7;
+    box-shadow: 3px 4px 13px rgba(0, 0, 0, 0.28);
+    border-radius: 4px;
 }
 /* -------------------------- Our service for you - ABOUT OUR PRODUCTS-------------------------------------- */
 .Slider_Menu{
@@ -166,7 +247,7 @@ color: #E9EEF4;
 
 }
 .footer__text {
-    text-align: center;
+    text-align: left;
     font-style: normal;
     margin-bottom: 30px;
     font-weight: 400;
