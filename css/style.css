@@ -16,6 +16,7 @@ ul{
 /* настройка заголовков с палочками */
 .unitHeader{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 100px;
     justify-content: center;
     flex-direction: column;
@@ -92,6 +93,7 @@ ul{
 .CompanuStandarts {
     display: flex;
     justify-content: right;
+    flex-wrap: nowrap;
 }
 
 .CompanuStandarts__Content {
@@ -298,39 +300,40 @@ color: #E9EEF4;
 .main-nav{
    display: none;
 }
-/* .headerMenu__Burger{
-    width: 50px;
-    height: 50px;
-    box-sizing: border-box;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 110;
+@media (max-width:1568px){
+    .CompanuStandarts {
+       flex-wrap: wrap;
+       justify-content: center;
+    }
 }
-.burger__line{
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    background-color: black;
-    opacity: 1;
-    transition: 0.3s ease-in-out;
+@media (max-width:1180px){
+    .Slider_Menu{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 390px); 
+        
+    }
+    .MoOET{
+        display: grid;
+        grid-template-columns: repeat(2, 270px);
+        justify-content: center;
+        gap: 30px;
+    }
+    .Chart{
+        width: 600px;
+        align-items: center;
+    }
+    .ATPoTW{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mainBlock__footer{
+        justify-content: center;
+        gap: 40px;
+        grid-template-columns: repeat(3, 234px);
+    }
 }
-.burger__line:nth-child(1){
-    top: 0;
-}
-.burger__line:nth-child(2){
-    top: 20px;
-}
-.burger__line:nth-child(3){
-    top: 20px;
-}
-.burger__line:nth-child(4){
-    top: 40px;
-} */
-@media (max-width:929px) {
+@media (max-width:945px) {
     #headerMenu{
         display: none;
     }
@@ -397,5 +400,58 @@ color: #E9EEF4;
         justify-content: center;
         gap: 30px;
         text-align: center;
+    }
+    .aboutUs__vidioImg{
+        width: 400px;
+    }
+    .aboutUs__computerImg{
+        width: 200px;
+    }
+    .Chart{
+        width: 400px;
+        align-items: center;
+    }
+    .mainBlock__footer{
+        justify-content: center;
+        gap: 40px;
+        grid-template-columns: repeat(2, 234px);
+    }
+}
+@media (max-width:592px){
+    .blockHeader__header{
+        font-size: 30px;
+    }
+    .MoOET{
+        display: grid;
+        grid-template-columns: repeat(1, 270px);
+        justify-content: center;
+        gap: 30px;
+    }
+    .CompanuStandarts__Content{
+        margin-left: 20px;
+    }
+    .CompanuStandarts__Content__Text {
+        width: 200px;
+        height: 200px;
+    }
+    .CompanuStandarts__Ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ATPoTW__Text {
+        
+        width: 238px;
+    }
+    .Chart{
+        width: 350px;
+        align-items: center;
+    }
+    .mainBlock__footer{
+        justify-content: center;
+        gap: 40px;
+        grid-template-columns: repeat(1, 234px);
+    }
+    .footer__description__text {
+        font-size: 10px;
     }
 }
