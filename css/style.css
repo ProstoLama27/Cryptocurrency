@@ -49,6 +49,7 @@ ul{
     max-width:1170px;
    /* border: 2px solid red; */
     margin: 0 auto;;
+    position: relative;
 }
 /* -----------------меню------------- */
 .headerMenu__Burger{
@@ -75,6 +76,7 @@ ul{
 }
 /* настройки кнопки */
 .header__menuBtn{
+    cursor: pointer;
    width: 120px;
    height: 40px;
    color: #E9EEF4;
@@ -112,8 +114,6 @@ ul{
 }
 
 .CompanuStandarts__Content__Text {
-    width: 498.07px;
-    height: 78px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -168,6 +168,7 @@ ul{
     line-height: 26px;
 }
 .ATPoTW__Btn {
+    cursor: pointer;
     width: 120px;
     height: 40px;
     padding: 7px 20px;
@@ -210,6 +211,7 @@ color: #E9EEF4;
     color: #EDEDED;
 }
 .LearnMore__btn{
+    cursor: pointer;
     align-self: center;
     width: 135px;
     height: 40px;
@@ -251,6 +253,7 @@ color: #E9EEF4;
     z-index: 1;
 }
 .MoOET__Card__Btn {
+    cursor: pointer;
     background-color: transparent;
     position: absolute;
     z-index: 2;
@@ -296,11 +299,17 @@ color: #E9EEF4;
     line-height: 26px;
     color: #CBD1D9;
 }
+.footer__text:hover,
+.footer__text:focus{
+    cursor: pointer;
+    color: #afb3b9;
+}
 /* ---------------------------- Burger menu---------------------------------------------- */
 .main-nav{
    display: none;
 }
 @media (max-width:1568px){
+    
     .CompanuStandarts {
        flex-wrap: wrap;
        justify-content: center;
@@ -338,6 +347,7 @@ color: #E9EEF4;
         display: none;
     }
     .headerMenu__Burger{
+        position: absolute;
         visibility: visible;
         margin-left: 10px;
         width: 50px;
@@ -402,7 +412,7 @@ color: #E9EEF4;
         text-align: center;
     }
     .aboutUs__vidioImg{
-        width: 400px;
+        width: 300px;
     }
     .aboutUs__computerImg{
         width: 200px;
@@ -427,9 +437,9 @@ color: #E9EEF4;
         justify-content: center;
         gap: 30px;
     }
-    .CompanuStandarts__Content{
-        margin-left: 20px;
-    }
+    /* .CompanuStandarts__Content{
+        margin-left: 50px;
+    } */
     .CompanuStandarts__Content__Text {
         width: 200px;
         height: 200px;
@@ -441,6 +451,12 @@ color: #E9EEF4;
     .ATPoTW__Text {
         
         width: 238px;
+    }
+    .ATPoTW__Btn{
+        margin-top: 10px;
+    }
+    .LearnMore__btn{
+        margin-bottom: 10px;
     }
     .Chart{
         width: 350px;
